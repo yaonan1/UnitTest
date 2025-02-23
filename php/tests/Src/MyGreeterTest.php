@@ -30,4 +30,9 @@ class MyGreeterTest extends TestCase
             strlen($this->greeter->greeting()) > 0
         );
     }
+
+    public function test_greetingVal()
+    {
+        $this->assertEquals("Good afternoon", $this->greeter->greeting());
+    }
 }

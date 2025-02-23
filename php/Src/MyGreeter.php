@@ -49,6 +49,6 @@ class MyGreeter
     }
 }
 
-$a = new MyGreeter();
-$result = $a->greeting();
-var_dump($result);exit;
+//$a = new MyGreeter();
+//$result = $a->greeting();
+//var_dump($result);exit;
