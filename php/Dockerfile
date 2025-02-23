@@ -16,7 +16,7 @@ RUN composer install --no-dev --no-progress --no-interaction
 COPY . .
 
 # 安装 PHPUnit 作为开发依赖项
-RUN COMPOSER_MEMORY_LIMIT=-1 composer require --dev phpunit/phpunit --no-progress --no-interaction
+RUN composer require --dev phpunit/phpunit --no-progress --no-interaction
 
 # 运行单元测试
 CMD ["vendor/bin/phpunit"]
